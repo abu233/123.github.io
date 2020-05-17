@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>川剧流派</title>
+	<script src="https://use.fontawesome.com/395db1194a.js"></script>
+	<!--图标链接地址-->
+	<style>
+	     <!--
+			*{margin: 0;
+			  padding: 0;
+			  list-style: none;
+			  text-decoration: none;
+			  font-family: "迷你简小隶书"}/*全局设置*/
+			.body{margin: 0;
+				  padding: 0}/*全局设置*/
+			.sidebar{position: fixed;
+					 left: -250px;
+					 height: 100%;
+					 width: 250px;
+					 background: #042331;
+					 transition: all .5s ease}/*导航栏整个大小，转换位置，时间*/
+			.sidebar header{font-size: 30px;
+							color: #FFFFFF;
+							text-align: center;
+							line-height: 70px;
+							background: #063146;
+							user-select: none}/*导航栏表头*/
+			.sidebar ul a{display: block;
+						  height: 100%;
+						  width: 100%;
+						  line-height: 65px;
+						  font-size: 20px;
+						  color: #FFFFFF;
+						  padding-left: 40px;
+						  box-sizing: border-box;
+						  border-top: 1px solid rgba(255,255,255,.1);
+						  border-bottom:1px solid black;
+						  transition: .4s}/*各导航网页设置*/
+			ul li:hover a{padding-left: 50px}/*各导航网页图标*/
+			.sidebar ul a i{margin-right: 16px}/*文字与图标间距*/
+		    label #btn,label #cancel{position: absolute;
+									 cursor: pointer;
+									 background: #042331;
+									 border-radius: 3px}/*两个按钮共同设置*/
+			label #btn{position: absolute;
+					   cursor:pointer;
+					   background: #042331;
+					   border-radius: 3px;
+					   left: 23px;
+					   top: 10px;
+					   font-size: 22px;
+					   color: white;
+					   padding: 6px 9px;
+					   transition: all .5s}/*菜单按钮*/
+			label #cancel{z-index: 100;
+						  left: -195px;
+						  top: 17px;
+						  font-size: 22px;
+						  color: #0a5275;
+						  padding: 4px 9px;
+						  transition: all .5s ease}/*小叉按钮*/
+			#check{display: none}/*隐藏元素*/
+			#check:checked ~ .sidebar{left: 0}/*点击按钮时导航栏位置*/
+			#check:checked ~ label #btn{left: 200px;
+										opacity: 0;
+										pointer-events: none}/*点击菜单按钮时导航栏位置*/
+			#check:checked ~ label #cancel{left: 195px}/*点击小叉按钮时导航栏位置*/
+		    h1{font-family: "方正粗黑宋简体";
+			   font-size: 32px;
+			   color: #698084;
+			   letter-spacing: normal;
+			   margin-bottom: 9px}/*定义h1*/
+		    .container{width: 98%;
+					   height: 580px;
+					   margin:0 auto;
+					   text-align: center;
+					   background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+					   padding: 20px;}/*定义区块*/
+			.articleText{font-size: 22px;
+						 letter-spacing: 4px;
+						 line-height: 1.2;
+						 text-align:left;
+						 text-indent: 2em;
+						 width: 55%;
+						 float: left;
+						 margin-top: 20px;
+						 margin-left: 20px}/*正文设置*/
+			.picture{width: 260px;
+					 width: 37%;
+					 float: right;
+					 margin-top: 20px;
+					 margin-right: 20px}/*图片位置*/
+			.picture img{display: block;
+						 width: 100%}/*图片大小*/
+			.footer{font-size: 12px;
+					font-family: "方正粗黑宋简体";
+					line-height: 1.5;
+					text-align:center}/*页脚设置*/
+			.top{font-family: "方正粗黑宋简体";
+				 font-size: 12px;
+				 color: #B0B0B0;
+				 letter-spacing: normal;
+				 margin-top: 520px}/*回到顶部*/
+         -->
+	  </style>
+</head>
+
+<body>
+	<input type="checkbox" id="check"><!--导航栏按键-->
+	<label for="check">
+	    <i class="fa fa-bars" id="btn"></i>
+		<i class="fa fa-times" id="cancel"></i>
+	</label>
+	<div class="sidebar"><!--导航栏-->
+		<header>川剧文化</header><!--网页主题-->
+		<!--各网页导航-->
+		<ul>
+			<li>
+				<a href="../login/login.html"><i class="fa fa-user-circle"></i>用户登录</a>
+			</li>
+			<li>
+				<a href="../SichuanOpera-History/SichuanOpera-history.html"><i class="fa fa-history"></i>历史沿革</a>
+			</li>
+			<li>
+				<a href="../SichuanOpera/SichuanOpera.html"><i class="fa fa-book"></i>川剧剧目</a>
+			</li>
+			<li>
+				<a href="SichuanOpera-School.html"><i class="fa fa-graduation-cap"></i>川剧流派</a>
+			</li>
+			<li>
+				<a href="../SichuanOpera-Face/SichuanOpera-Face.html"><i class="fa fa-bolt"></i>川剧变脸</a>
+			</li>
+			<li>
+				<a href="../SichuanOpera-Singing/SichuanOpera-Singing.html"><i class="fa fa-music"></i>川剧唱腔</a>
+			</li>
+			<li>
+				<a href="SichuanOpera-Status/SichuanOpera-Status.html"><i class="fa fa-comment"></i>川剧现状</a>
+			</li>
+		</ul>
+	</div>
+	<div class="container">
+		<!--这是正文-->
+		<main>
+			<article>
+				<!--这是标题-->
+				<a id="top"><h1>川剧流派</h1></a>
+				<hr>
+					<!--这是正文段落-->
+					<p class="articleText">
+					<!--正文第一段-->
+					川剧由于各种声腔流行地区和艺人师承关系，逐渐形成一些流派。在这些流派中，除象旦行浣（花仙）派、丑行傅（三乾）派、曹（俊臣）派等以杰出艺人称派外，主要则是按流行地区分四派：一是“川西派”，包括以成都为中心的温江地区各县，以胡琴为主，形成独特的“贝调”；二是“资阳河派”，包括自贡及内江区和县市，以高腔为主，艺术风格最为谨严；三是“川北派”，包括南充及绵阳的部分地区，以唱弹戏为主，受秦腔影响校多；四是“川东派”，包括以重庆为中心的川东一带，因重庆为四川商业中心，来此演出的外地剧种很多。特点是戏路杂，声腔多样化。 
+					</p>
+					<div class="picture">
+						<img src="img/school.jpg" alt="川剧">
+					</div>
+			</article>
+			<a href="#top" target="_top"><p class="top">回到顶部</p></a>
+		</main>
+	</div>
+	<hr>
+	<footer class="footer">
+		<!--这是页尾-->
+		<p>Posted by:向彩蕾</p>
+		<p>如果您发现本页面存在问题，欢迎通过邮箱1498520215@qq.com联系我们</p>
+	</footer>
+</body>
+</html>

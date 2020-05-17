@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>川剧变脸</title>
+	<script src="https://use.fontawesome.com/395db1194a.js"></script>
+	<!--图标链接地址-->
+	<style>
+	     <!--
+			*{margin: 0;
+			  padding: 0;
+			  list-style: none;
+			  text-decoration: none;
+			  font-family: "迷你简小隶书"}/*全局设置*/
+			.body{margin: 0;
+				  padding: 0}/*全局设置*/
+			.sidebar{position: fixed;
+					 left: -250px;
+					 height: 100%;
+					 width: 250px;
+					 background: #042331;
+					 transition: all .5s ease}/*导航栏整个大小，转换位置，时间*/
+			.sidebar header{font-size: 30px;
+							color: #FFFFFF;
+							text-align: center;
+							line-height: 70px;
+							background: #063146;
+							user-select: none}/*导航栏表头*/
+			.sidebar ul a{display: block;
+						  height: 100%;
+						  width: 100%;
+						  line-height: 65px;
+						  font-size: 20px;
+						  color: #FFFFFF;
+						  padding-left: 40px;
+						  box-sizing: border-box;
+						  border-top: 1px solid rgba(255,255,255,.1);
+						  border-bottom:1px solid black;
+						  transition: .4s}/*各导航网页设置*/
+			ul li:hover a{padding-left: 50px}/*各导航网页图标*/
+			.sidebar ul a i{margin-right: 16px}/*文字与图标间距*/
+		    label #btn,label #cancel{position: absolute;
+									 cursor: pointer;
+									 background: #042331;
+									 border-radius: 3px}/*两个按钮共同设置*/
+			label #btn{position: absolute;
+					   cursor:pointer;
+					   background: #042331;
+					   border-radius: 3px;
+					   left: 23px;
+					   top: 10px;
+					   font-size: 22px;
+					   color: white;
+					   padding: 6px 9px;
+					   transition: all .5s}/*菜单按钮*/
+			label #cancel{z-index: 100;
+						  left: -195px;
+						  top: 17px;
+						  font-size: 22px;
+						  color: #0a5275;
+						  padding: 4px 9px;
+						  transition: all .5s ease}/*小叉按钮*/
+			#check{display: none}/*隐藏元素*/
+			#check:checked ~ .sidebar{left: 0}/*点击按钮时导航栏位置*/
+			#check:checked ~ label #btn{left: 200px;
+										opacity: 0;
+										pointer-events: none}/*点击菜单按钮时导航栏位置*/
+			#check:checked ~ label #cancel{left: 195px}/*点击小叉按钮时导航栏位置*/
+		    h1{font-family: "方正粗黑宋简体";
+			   font-size: 32px;
+			   color: #698084;
+			   letter-spacing: normal;
+			   margin-bottom: 9px}/*定义h1*/
+		    .container{width: 98%;
+					   height: 900px;
+					   margin:0 auto;
+					   text-align: center;
+					   background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+					   padding: 20px;}/*定义区块*/
+			.articleText{font-size: 22px;
+						 letter-spacing: 4px;
+						 line-height: 1.2;
+						 text-align:left;
+						 text-indent: 2em;
+						 margin: 20px}/*正文设置*/
+			.footer{font-size: 12px;
+					font-family: "方正粗黑宋简体";
+					line-height: 1.5;
+					text-align:center}/*页脚设置*/
+			.top{font-family: "方正粗黑宋简体";
+				 font-size: 12px;
+				 color: #B0B0B0;
+				 letter-spacing: normal;
+				 margin-top: 70px}/*回到顶部*/
+         -->
+	  </style>
+</head>
+
+<body>
+	<input type="checkbox" id="check"><!--导航栏按键-->
+	<label for="check">
+	    <i class="fa fa-bars" id="btn"></i>
+		<i class="fa fa-times" id="cancel"></i>
+	</label>
+	<div class="sidebar"><!--导航栏-->
+		<header>川剧文化</header><!--网页主题-->
+		<!--各网页导航-->
+		<ul>
+			<li>
+				<a href="../login/login.html"><i class="fa fa-user-circle"></i>用户登录</a>
+			</li>
+			<li>
+				<a href="../SichuanOpera-History/SichuanOpera-history.html"><i class="fa fa-history"></i>历史沿革</a>
+			</li>
+			<li>
+				<a href="../SichuanOpera/SichuanOpera.html"><i class="fa fa-book"></i>川剧剧目</a>
+			</li>
+			<li>
+				<a href="../SichuanOpera-School/SichuanOpera-School.html"><i class="fa fa-graduation-cap"></i>川剧流派</a>
+			</li>
+			<li>
+				<a href="SichuanOpera-Face.html"><i class="fa fa-bolt"></i>川剧变脸</a>
+			</li>
+			<li>
+				<a href="../SichuanOpera-Singing/SichuanOpera-Singing.html"><i class="fa fa-music"></i>川剧唱腔</a>
+			</li>
+			<li>
+				<a href="../SichuanOpera-Status/SichuanOpera-Status.html"><i class="fa fa-comment"></i>川剧现状</a>
+			</li>
+		</ul>
+	</div>
+	<div class="container">
+		<!--这是正文-->
+		<main>
+			<article>
+				<!--这是标题-->
+				<a id="top"><h1>川剧变脸</h1></a>
+				<hr>
+					<!--这是正文段落-->
+					<p class="articleText">
+					<!--正文第一段-->
+					<b>何谓变脸：</b>变脸是川剧表演的特技之一，用于揭示剧中人物的内心及思想感情的变化，即把不可见、不可感的抽象的情绪和心理状态变成可见、可感的具体形象——脸谱。 
+					</p>		
+					<p class="articleText">
+					<!--正文第二段-->
+					<img src="img/face.jpg" alt="川剧" align ="right">
+						<!--检查说align已经过时，但是我用div效果并不好，调不好位置，所以还是用了align-->
+					<b>脸谱演变：</b>最初的脸谱是纸壳面具，后经改良，发展为草纸绘制的脸谱，表演时以烟火或折扇掩护，层层揭去脸谱，新中国成立后，随着变脸绝技的飞速发展，制作脸谱的材料也发展成为现在使用的绸缎面料，极大的方便了川剧演员的表演。
+					</p>
+					<p class="articleText">
+					<!--正文第三段-->
+					<b>脸谱造型：</b>变脸脸谱会选用一些不知名人士，包括侠士、鬼怪之类的造型，而人们所熟知的脸谱，如关公、曹操、包公等人物的脸谱一般不用于变脸。绘制变脸脸谱笔锋要锐利、粗犷，颜色对比要强烈，这样才能形成炫目的礼堂效果，在设色寓意的设计上，要以剧中人物的道德品质和角色种类为依据，或歌颂赞扬、或揭露讽刺、或鞭挞批判，或贬或褒，全都可以从脸谱色彩中反映出来。 
+					</p>
+					<p class="articleText">
+					<!--正文第四段-->
+					<b>手法：抹脸、吹脸、扯脸、运气变脸</b> 
+					</p>
+				<p class="articleText">
+					<!--正文第五段-->
+					<b>抹脸：</b>将化妆油彩涂在脸的某一特定部位上，表演时用手往脸上一抹，即可变成另外一种脸色。如果需摇变整张脸，就把油彩涂在额上或眉毛上，如果只变下半部脸，则将油彩涂在脸上或鼻子上。《白蛇传》中的许仙用的就是“抹脸”。 
+					</p>
+					<p class="articleText">
+					<!--正文第六段-->
+					<b>吹脸：</b>用粉末状的化妆品，如金粉、银粉、墨粉等，装进特定的容器里，表演时，演员只需将脸贴近容器一吹，粉末就会扑在脸上，吹时必须闭眼、闭口、闭气。《活捉子都》中的吹脸，化妆粉末是放在酒杯内的，更多的时候是在舞台的地面上摆一个已经装好粉末的小盒子，演员只需做一个伏地的舞蹈动作，就可以趁机将脸贴近盒子。
+					</p>
+					<p class="articleText">
+					<!--正文第七段-->
+					<b>扯脸：</b>事前将脸谱画在一张一张剪好的绸子上，然后按顺序贴在脸上，每张脸谱都系有一把丝线，丝线的另一端系在衣服的某一个顺手而又不引人注目的地方（如腰带上），依据剧情的需要，在巧妙利落的舞蹈动作的掩护下，再一张一张地扯下来。《望娘滩》的聂龙、《白蛇传》中的钵童都使用的是“扯脸”。
+					</p>
+					<p class="articleText">
+					<!--正文第八段-->
+					<b>运气变脸：</b>传说已故川剧演员彭泗洪曾在扮演《空城计》中的诸葛亮时，运用气功而使脸由红变白，再由白转青，表现诸葛亮在得知司马懿大军退去后的心理变化。  
+					</p>
+			</article>
+			<a href="#top" target="_top"><p class="top">回到顶部</p></a>
+		</main>
+	</div>
+	<hr>
+	<footer class="footer">
+		<!--这是页尾-->
+		<p>Posted by:向彩蕾</p>
+		<p>如果您发现本页面存在问题，欢迎通过邮箱1498520215@qq.com联系我们</p>
+	</footer>
+</body>
+</html>
